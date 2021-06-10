@@ -1,0 +1,203 @@
+body {
+    background: gray;
+    color: rgb(40, 42, 45);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(40, 42, 45);
+    padding: 20px;
+    text-align: center;
+} 
+
+.graybox {
+    border-radius: 5px;
+    background: darkgray;
+    padding: 8px 16px 8px 16px;
+    color:white;
+}
+.bluebox {
+    border-radius: 5px;
+    background: rgb(114,137,218);
+    padding: 8px 16px 8px 16px;
+    color:white;
+}
+.greenbox {
+    border-radius: 5px;
+    background: rgb(66,182,127);
+    padding: 8px 16px 8px 16px;
+    color:white;
+}
+.purplebox {
+    border-radius: 5px;
+    background: rgb(134, 93, 187);
+    padding: 8px 16px 8px 16px;
+    color:white;
+}
+
+
+p.header {
+    text-align: center;
+}
+p.body {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+li:first-child {
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    animation: "css/animation/pulse.css" 0.5s;
+    animation-iteration-count: infinite;
+}
+section {
+    background: rgb(40, 42, 45);
+    color: gray;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+div {
+    background: gray;
+    color: white;
+     width: 100px;
+    margin: auto;
+    
+    
+}
+
+footer {
+    background: rgb(63, 63, 63);
+    color:white;
+    padding: 20px;
+    font-size: 10px;
+}
+.quote {
+    text-align: center;
+    justify-content: center;
+}
+.image_center{
+    position: sticky;
+    justify-content: center;
+    
+}
+.parallax {
+    background-image: var(--imageloc);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.parallax div{
+    text-align: center;
+    font-size: 100px;
+    background:none;
+    
+    margin: auto;
+    width: 50%;
+
+}
+
+.recentproj {
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 24px;
+    color: black:
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border-radius: 5px;
+    background-color: darkgray;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(221, 221, 221);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover button{
+    text-decoration-line: underline;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+      
+    }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: gray;}
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 200px;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+  .grid-item {
+      /*
+      background-image: var(--imageloc);
+      background-size: 100% 100%; 
+      */
+      
+
+      padding: 2% 3% 2% 3%;
+      position: relative;
+  }
+
+  .grid-item img {
+    border-radius: 20px;
+      width: 100%
+
+  }
