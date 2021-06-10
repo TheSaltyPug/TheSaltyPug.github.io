@@ -49,6 +49,7 @@ async function getRepos() {
 
         const project_image = document.createElement("img");
         project_image.src = "https://raw.githubusercontent.com/" + repos[p].full_name + "/master/index.png";
+        project_image.onerror = function(){project_image.src = "./images/coming_soon.png"; project_image.onerror = null};
         project_image.alt = repos[p].name + " image";
 
         const project_name = document.createElement("p");
