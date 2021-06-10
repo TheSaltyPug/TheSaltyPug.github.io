@@ -4,7 +4,7 @@
     async function getRepos() {
         clear()
        //alert("test")
-        const url = "https://api.github.com/search/repositories?q=user:CWilsonTSP"
+        const url = "https://api.github.com/search/repositories?q=user:TheSaltyPug"
         const response = await fetch(url)
         const result = await response.json()
 
